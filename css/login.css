@@ -1,0 +1,416 @@
+/* 서브 네비 */
+
+#sub_nav{
+    width: 100%;
+    height: 100px;
+}
+
+#sub_nav .sub_nav{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sub_nav .sub_nav ul li{
+    float: right;
+}
+
+#sub_nav .sub_nav ul li a{
+    display: block;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+.xi-home, .xi-angle-right, .guide, .xi-angle-right{
+    color: #919191;
+}
+
+.wayto{
+    color: #000000;
+}
+
+/* 섹션 서브 메뉴 */
+
+section{
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+}
+
+section #sub_menu_wrap{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+section #sub_menu_wrap #sub_menu{
+    width: 200px;
+    height: 800px;
+    float: left;
+    position: relative;
+    z-index: 99;
+}
+
+section #sub_menu_wrap #sub_menu h1{
+    margin-bottom: 20px;
+}
+
+section #sub_menu_wrap #sub_menu p{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+section #sub_menu_wrap #sub_menu ul li{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section #sub_menu_wrap #sub_menu ul li.bo_b{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.m_hover{
+    display: block;
+    color: #000;
+}
+
+.m_hover:hover{
+    color: #f47320;
+}
+
+.m_hover_1{
+    display: block;
+    color: #f47320;
+}
+
+/* 로그인 상단*/
+section #sub_menu_wrap #login{
+    width: 960px;
+    height: 80px;
+    padding: 0px 0px 0px 40px;
+    float: left;
+}
+
+#login_left{
+    width: 840px;
+    height: 50px;
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 프린트 공유 박스 */
+#login_right{
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: -60px;
+    left: 10px;
+}
+
+.share{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+}
+
+.share a img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 9px;
+}
+
+section #sub_menu_wrap #privacy{
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+}
+
+.pri_t{
+    width: 900px;
+    height: 180px;
+    padding: 25px 30px 25px 30px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 100px;
+    left: 220px;
+    background-color: rgba(219, 218, 218, 0.212);
+    border-radius: 30px;
+}
+
+.pri_t ul li{
+    width: 100%;
+    height: 33px;
+    font-size: 0.9em;
+}
+
+.pri_t ul li:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pri_t ul li a{
+    color: gray;
+}
+
+.mamama{
+    margin-bottom: 10px;
+}
+
+.grgr{
+    color: gray;
+}
+
+/* 로긴창 */
+
+#loginwrap{
+    width: 960px;
+    height: 420px;
+    position: relative;
+    top: 280px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#loginwrap #loginhere{
+    width: 626px;
+    height: 420px;
+}
+
+.log_1{
+    width: 313px;
+    height: 60px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 1em;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    background-color: #f1f0f0;
+}
+
+.log_2{
+    width: 313px;
+    height: 60px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    background-color: #f1f0f0;
+}
+
+.log_1.active, .log_1:hover, .log_2.active, .log_2:hover{
+    background-color: #f47320;
+    color: #fff;
+}
+
+/* 회원 로그인 영역 */
+
+.log_1_tap{
+    display: none;
+    width: 626px;
+    height: 360px;
+}
+
+.log_1_tap form{
+    width: 500px;
+    height: 210px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.idbox, .passbox{
+    width: 499px;
+    height: 50px;
+    background-color: #f1f1f1;
+    border: 1px solid #b3b3b3;
+}
+
+.idbox{
+    margin-bottom: 10px;
+}
+
+.passbox{
+    margin-bottom: 20px;
+}
+
+.idbox p{
+    padding: 13px 0 0 30px;
+}
+
+.passbox p{
+    padding: 13px 0 0 23px;
+}
+
+
+.logid{
+    width: 360px;
+    height: 50px;
+    font-size: 1em;
+    background-color: transparent;
+    position: absolute;
+    top: 102px;
+    left: 202px;
+}
+
+.logpass{
+    width: 360px;
+    height: 50px;
+    font-size: 1em;
+    background-color: transparent;
+    position: absolute;
+    top: 164px;
+    left: 202px;
+}
+
+.log_1_tap form button{
+    width: 500px;
+    height: 60px;
+    background-color: #f47320;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.log_t > span{
+    width: 120px;
+}
+
+.log_t{
+    width: 420px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.log_t_1:hover, .log_t_2:hover, .log_t_3:hover{
+    color: #f47320;
+}
+
+.log_t span{
+    color: gray;
+}
+
+.passment{
+    display: block;
+    color: gray;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* 비회원 로그인 영역 */
+
+.log_2_tap{
+    display: none;
+    width: 626px;
+    height: 360px;
+}
+
+.ipin{
+    width: 295px;
+    height: 320px;
+    background-color: #ececec78;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.phone{
+    width: 295px;
+    height: 320px;
+    background-color: #ececec78;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.ipin img, .phone img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.iphone{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ipin ul li, .phone ul li{
+    text-align: center;
+}
+
+.ipin ul li:nth-child(3), .phone ul li:nth-child(3){
+    margin-bottom: 10px;
+}
+
+.ipin ul li a, .phone ul li a{
+    color: #f47320;
+}
+
+.ipin ul li a span, .phone ul li a span{
+    border: 1px solid #f47320;
+    width: 140px;
+    height: 40px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.log_1.active~.log_1_tap{display: block;}
+.log_2.active~.log_2_tap{display: block;}
+
+/* 간편 로그인 영역 */
+
+#loginwrap #easylogin{
+    width: 313px;
+    height: 420px;
+}
+
+#loginwrap #easylogin .easy{
+    width: 313px;
+    height: 40px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 1em;
+    background-color: #f1f0f0;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.easy_t{
+    width: 250px;
+    height: 310px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.easy_t{
+    color: gray;
+    font-size: 0.8em;
+}
+
+/* 공간 */
+
+.null{
+    width: 100%;
+    height: 200px;
+}

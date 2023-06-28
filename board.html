@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>화성시 보건소</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/DB_springMove_fn.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/boardscript.js"></script>
+</head>
+
+<body>
+    <!-- 오늘하루 열지않음 -->
+    <div id="today">
+        <div id="today_back">
+            <div id="today_center">
+                <ul>
+                    <li>화성시 코로나19 행정안내센터(24시간 상담)</li>
+                    <li>031-5189-1200</li>
+                </ul>
+                <div class="round">
+                    <div class="t_up">코로나 19 종합안내 ></div>
+                </div>
+            </div>
+            <div class="close">
+                <span>오늘 하루 창을 열지 않습니다. X 닫기</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap">
+
+        <!-- 날씨 로그인 -->
+        <nav>
+            <div id="nav">
+                <div id="nav_logo">
+                    <a href="index.html"><img src="./img/hscity_logo.gif" alt="hscity_logo"></a>
+                </div>
+                <div id="nav_wt">
+                    <div class="wt">
+                    </div>
+                </div>
+                <div id="nav_r">
+                    <ul>
+                        <li>
+                            <a href="login.html"><img src="./img/login.gif" alt="login"> 로그인</a>
+                        </li>
+                        <li>
+                            <a href="#none">화성시청 <img src="./img/arrow.gif" alt="arrow"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 메뉴 영역 -->
+        <div id="nav2">
+            <div id="nav_menu">
+                <ul class="dep1">
+                    <li>
+                        <a href="#none">보건소안내</a>
+                        <ul class="dep2">
+                            <li><a href="sub2.html">인사말</a></li>
+                            <li><a href="#none">보건소 비전</a></li>
+                            <li><a href="#none">보건의료서비스헌장</a></li>
+                            <li><a href="#none">연혁 및 조직안내</a></li>
+                            <li><a href="#none" id="quick3">직원안내</a></li>
+                            <li><a href="#none">층별시설안내</a></li>
+                            <li><a href="#none" id="quick1">지소/진료소 안내</a></li>
+                            <li><a href="sub.html" id="quick2">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">민원안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">각종검사안내</a></li>
+                            <li><a href="#none">제증명발급안내</a></li>
+                            <li><a href="#none">격리통지서 발급안내</a></li>
+                            <li><a href="#none">인허가안내</a></li>
+                            <li><a href="#none">민원서식모음</a></li>
+                            <li><a href="#none">의약업소자율점검</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">진료안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">일반진료</a></li>
+                            <li><a href="#none">치과진료</a></li>
+                            <li><a href="#none">한방진료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">보건사업안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">건강증진사업</a></li>
+                            <li><a href="#none">지역보건사업</a></li>
+                            <li><a href="#none">감염병관리사업</a></li>
+                            <li><a href="#none">정신건강∙재활보건사업</a></li>
+                            <li><a href="#none">의료비지원사업</a></li>
+                            <li><a href="#none">치매예방 및 관리사업</a></li>
+                            <li><a href="#none">코로나19</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">예방접종안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">영유아예방접종</a></li>
+                            <li><a href="#none">성인예방접종</a></li>
+                            <li><a href="#none">해외여행자 예방접종</a></li>
+                            <li><a href="#none">예방접종시 주의사항</a></li>
+                            <li><a href="#none">예방접종 도우미</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">열린마당</a>
+                        <ul class="dep2">
+                            <li><a href="#none">보건소식</a></li>
+                            <li><a href="#none">입찰공고</a></li>
+                            <li><a href="#none">감염병자료실</a></li>
+                            <li><a href="#none">보건교육자료실</a></li>
+                            <li><a href="board.html">의료기관/약국</a></li>
+                            <li><a href="#none">산후조리원</a></li>
+                            <li><a href="#none">사진자료실</a></li>
+                            <li><a href="#none">주요행사</a></li>
+                            <li><a href="#none">칭찬해주세요</a></li>
+                            <li><a href="#none">국민신문고</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub_shadow">
+            </div>
+        </div>
+
+        <!-- 퀵메뉴 -->
+        <div id="quick">
+            <ul>
+                <li>
+                    <a href="board.html" class="bt1"></a>
+                </li>
+                <li>
+                    <a href="sub.html" class="bt2"></a>
+                </li>
+                <li>
+                    <a href="#none" class="bt3"></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 서브네비 영역 -->
+        <div id="sub_nav">
+            <div class="sub_nav">
+                <ul>
+                    <li>
+                        <a href="#none" class="wayto">의료기관/약국</a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none" class="guide">열린마당</a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-home"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div id="sub_menu_wrap">
+                <div id="sub_menu">
+                    <h1>열린마당</h1>
+                    <p></p>
+                    <ul>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">보건소식</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">입찰공고</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">감염병자료실</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">보건교육자료실</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="board.html" class="m_hover_1">의료기관/약국</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">산후조리원</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">사진자료실</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">주요행사</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">칭찬해주세요</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">국민신문고</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="map">
+                    <div id="map_center">
+                        <div id="map_left">의료기관/약국</div>
+                        <div id="map_right">
+                            <div class="print">
+                                <a href="#none"><img src="./img/ico-print.png" width="21" height="23" alt="print"></a>
+                            </div>
+                            <div class="share">
+                                <a href="#none"><img src="./img/ico-share.png" width="20" height="22" alt="share" class="ic_sh"></a>
+                            </div>
+                        </div>
+                        <div id="pharmacy">
+                            <div class="pha_menu">
+                                <ul class="pha_flex">
+                                    <li>전체 의료기관/약국</li>
+                                    <li><a href="https://www.pharm114.or.kr/main.asp">휴일 당번약국</a></li>
+                                    <li><a href="https://www.e-gen.or.kr/egen/main.do">휴일 진료기관</a></li>
+                                </ul>
+                            </div>
+                            <!-- 게시판 -->
+                            <div class="board_wrap">
+                                <div class="board_title">
+                                    <div class="search_bor"><input type="search" placeholder="검색어를 입력해주세요." class="board_place"></div>
+                                    <a href="#none">검색</a>
+                                </div>
+                                <p class="dddd">총 938건, 페이지 1 / 94</p>
+                                <div class="boad_list_wrap">
+                                    <div class="board_list_1">
+                                        <div class="num">번호</div>
+                                        <div class="subject">전문과목</div>
+                                        <div class="name">의료기관명</div>
+                                        <div class="adress">의료기관주소</div>
+                                        <div class="phone">전화번호</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">938</div>
+                                        <div class="subject">의원</div>
+                                        <div class="name"><a href="#none">모두의원</a></div>
+                                        <div class="adress">경기도 화성시 향남읍 행정중앙2로 63-34, 301,302호</div>
+                                        <div class="phone">031-353-2675</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">937</div>
+                                        <div class="subject">병원</div>
+                                        <div class="name"><a href="#none">나이스병원</a></div>
+                                        <div class="adress">경기도 화성시 봉담읍 삼천병마로 1283, 4~6층</div>
+                                        <div class="phone">031-297-8875</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">936</div>
+                                        <div class="subject">병원</div>
+                                        <div class="name"><a href="#none">새봄병원</a></div>
+                                        <div class="adress">경기도 화성시 꽃내음1길 3층 일부, 4층</div>
+                                        <div class="phone">031-357-8100</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">935</div>
+                                        <div class="subject">치과의원</div>
+                                        <div class="name"><a href="#none">남양스타치과의원</a></div>
+                                        <div class="adress">경기도 화성시 남양읍 남양로 671, 7층</div>
+                                        <div class="phone">031-353-2675</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">934</div>
+                                        <div class="subject">한의원</div>
+                                        <div class="name"><a href="#none">재령한의원</a></div>
+                                        <div class="adress">경기도 화성시 남양읍 남양성지로 135, 402호</div>
+                                        <div class="phone">031-356-9992</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">933</div>
+                                        <div class="subject">치과의원</div>
+                                        <div class="name"><a href="#none">닥터홍치과의원</a></div>
+                                        <div class="adress">경기도 화성시 향남읍 상신하길로298번길 7-29, 305호</div>
+                                        <div class="phone">031-8055-0792</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">932</div>
+                                        <div class="subject">한의원</div>
+                                        <div class="name"><a href="#none">명당한의원</a></div>
+                                        <div class="adress">경기도 화성시 동탄대로 198, 403호 (산척동)</div>
+                                        <div class="phone">031-374-5086</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">931</div>
+                                        <div class="subject">한의원</div>
+                                        <div class="name"><a href="#none">미소한의원</a></div>
+                                        <div class="adress">경기도 화성시 송산면 사강로 183-1, 사강새마을금고 4층</div>
+                                        <div class="phone">031-357-9409</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">930</div>
+                                        <div class="subject">의원</div>
+                                        <div class="name"><a href="#none">강소아청소년과의원</a></div>
+                                        <div class="adress">경기도 화성시 동탄지성로 139, 양진빌딩 1층 105호 (능동)</div>
+                                        <div class="phone">031-8015-9720</div>
+                                    </div>
+                                    <div class="board_list">
+                                        <div class="num">929</div>
+                                        <div class="subject">의원</div>
+                                        <div class="name"><a href="#none">위대한탄생여성의원</a></div>
+                                        <div class="adress">경기도 화성시 동탄대로 537, A동 3층 332~335,337,343~346호 (오산동)</div>
+                                        <div class="phone">031-365-4799</div>
+                                    </div>
+                                    <div class="board_page">
+
+                                    </div>
+                                    <div class="bt_wrap">
+                                        <a href="#none">1</a>
+                                        <a href="#none">2</a>
+                                        <a href="#none">3</a>
+                                        <a href="#none">4</a>
+                                        <a href="#none">5</a>
+                                        <a href="#none">6</a>
+                                        <a href="#none"><i class="xi-angle-right-min"></i></a>
+                                        <a href="#none"><i class="xi-angle-right-min"></i><i class="xi-angle-right-min btwrapleft"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배경화면 영역 -->
+            <div class="back hidden">
+                <div class="back1">
+                    <img src="./img/back_img_1.png" alt="back_img_1">
+                </div>
+                <div class="back2">
+                    <img src="./img/back_img_2.png" alt="back_img_2">
+                </div>
+            </div>
+        </section>
+        
+        <!-- 만족도 폼 영역 -->
+        <div id="map_bot">
+            <div id="map_bot_center">
+                <ul>
+                    <li class="mapb_box">담당부서</li>
+                    <li>화성시 서부 보건소 (보건정책과)</li>
+                </ul>
+                <ul>
+                    <li class="mapb_box">만족도</li>
+                    <li>페이지의 내용이나 사용편의성에 대해 만족하십니까?</li>
+                </ul>
+                <div id="form">
+                    <form>
+                        <img src="./img/search1.png" width="40" height="40" alt="search1"><input type="radio"
+                            name="search" checked="checked" value="매우만족">매우만족
+                        <img src="./img/search2.png" width="40" height="40" alt="search2"><input type="radio"
+                            name="search" value="만족">만족
+                        <img src="./img/search3.png" width="40" height="40" alt="search3"><input type="radio"
+                            name="search" value="보통">보통
+                        <img src="./img/search4.png" width="40" height="40" alt="search4"><input type="radio"
+                            name="search" value="불만족">불만족
+                        <img src="./img/search5.png" width="40" height="40" alt="search5"><input type="radio"
+                            name="search" value="매우불만족">매우불만족
+                    </form>
+                    <div class="typing">
+                        <input type="search" placeholder="여러분의 소중한 의견을 보내주세요" class="typing_place">
+                    </div>
+                    <div class="inputpro"><a href="#none">입력</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="familysite">
+            <div id="familysite_center">
+                <ul class="familySite">
+                    <li class="f1"><a href="#none">직속기관/사업소<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list1">
+                            <li><a href="#none" target="_blank">행정복지센터</a></li>
+                            <li><a href="#none" target="_blank">보건소</a> </li>
+                            <li><a href="#none" target="_blank">맑은물사업소</a></li>
+                            <li><a href="#none" target="_blank">지역개발사업소</a></li>
+                            <li><a href="#none" target="_blank">환경사업소</a> </li>
+                            <li><a href="#none" target="_blank">차량등록사업소</a></li>
+                            <li><a href="#none" target="_blank">농업기술센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="f2"><a href="#none">화성시 패밀리 사이트<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list2">
+                            <li><a href="#none" target="_blank">화성일자리센터</a></li>
+                            <li><a href="#none" target="_blank">화성시 평생학습관</a></li>
+                            <li><a href="#none" target="_blank">화성시사회적경제센터</a></li>
+                            <li><a href="#none" target="_blank">화성시여성가족재단</a></li>
+                            <li><a href="#none" target="_blank">화성시장애인체육회</a></li>
+                            <li><a href="#none" target="_blank">화성시노사민정협의회</a></li>
+                        </ul>
+                    </li>
+                    <li class="f3"><a href="#none">공공/기타기관<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list3">
+                            <li><a href="#none" target="_blank">화성시사회복지재단</a></li>
+                            <li><a href="#none" target="_blank">화성산업진흥원</a></li>
+                            <li><a href="#none" target="_blank">화성시환경재단</a></li>
+                            <li><a href="#none" target="_blank">동탄호수공원</a></li>
+                            <li><a href="#none" target="_blank">화성시장애인가족지원센터</a></li>
+                            <li><a href="#none" target="_blank">화성시문화재단</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div class="foot_l">
+                    <a href="./index.html"><img src="./img/gray_logo.png" width="234" height="60" alt="gray_logo"></a>
+                </div>
+                <div class="foot_c">
+                    <div class="top">
+                        <a href="#none" class="email">이메일무단수집거부</a>
+                        <a href="#none" class="person">개인정보처리방침</a>
+                    </div>
+                    <div class="bt">
+                        <span>화성시 보건소 우)18596 경기도 화성시 향남읍 3.1만세로 1055 TEL)031-5189-2551 FAX)031-5189-1518<br>
+                        동탄 보건소 우)18640 경기도 화성시 노작로 226-9 TEL)031-5189-4377 FAX) 031-5189-4391<br>
+                        동부 보건소 우)18412 경기도 화성시 떡전골로 72-3 TEL)031-5189-4430~1 FAX)031-5189-4990</span><br>
+                        <span>COPYRIGHT (C) 화성시보건소 ALL RIGHTS RESERVED</span>
+                    </div>
+                </div>
+                <div class="foot_r">
+                    <img src="./img/footer_call.png" width="72" height="86" alt="call">
+                </div>
+                <div class="foot_rr">
+                    <span>민원안내콜센터</span>
+                    <p>1577-4200</p>
+                    <span>(031-370-3900)</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

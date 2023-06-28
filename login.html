@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>화성시 보건소</title>
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/DB_springMove_fn.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+    <!-- 오늘하루 열지않음 -->
+    <div id="today">
+        <div id="today_back">
+            <div id="today_center">
+                <ul>
+                    <li>화성시 코로나19 행정안내센터(24시간 상담)</li>
+                    <li>031-5189-1200</li>
+                </ul>
+                <div class="round">
+                    <div class="t_up">코로나 19 종합안내 ></div>
+                </div>
+            </div>
+            <div class="close">
+                <span>오늘 하루 창을 열지 않습니다. X 닫기</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap">
+     
+        <!-- 로그인 -->
+        <nav>
+            <div id="nav">
+                <div id="nav_logo">
+                    <a href="index.html"><img src="./img/hscity_logo.gif" alt="hscity_logo"></a>
+                </div>
+                <div id="nav_wt">
+                    <div class="wt">
+                    </div>
+                </div>
+                <div id="nav_r">
+                    <ul>
+                        <li>
+                            <a href="login.html"><img src="./img/login.gif" alt="login"> 로그인</a>
+                        </li>
+                        <li>
+                            <a href="#none">화성시청 <img src="./img/arrow.gif" alt="arrow"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 메뉴 영역 -->
+        <div id="nav2">
+            <div id="nav_menu">
+                <ul class="dep1">
+                    <li>
+                        <a href="#none">보건소안내</a>
+                        <ul class="dep2">
+                            <li><a href="sub2.html">인사말</a></li>
+                            <li><a href="#none">보건소 비전</a></li>
+                            <li><a href="#none">보건의료서비스헌장</a></li>
+                            <li><a href="#none">연혁 및 조직안내</a></li>
+                            <li><a href="#none" id="quick3">직원안내</a></li>
+                            <li><a href="#none">층별시설안내</a></li>
+                            <li><a href="#none" id="quick1">지소/진료소 안내</a></li>
+                            <li><a href="sub.html" id="quick2">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">민원안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">각종검사안내</a></li>
+                            <li><a href="#none">제증명발급안내</a></li>
+                            <li><a href="#none">격리통지서 발급안내</a></li>
+                            <li><a href="#none">인허가안내</a></li>
+                            <li><a href="#none">민원서식모음</a></li>
+                            <li><a href="#none">의약업소자율점검</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">진료안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">일반진료</a></li>
+                            <li><a href="#none">치과진료</a></li>
+                            <li><a href="#none">한방진료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">보건사업안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">건강증진사업</a></li>
+                            <li><a href="#none">지역보건사업</a></li>
+                            <li><a href="#none">감염병관리사업</a></li>
+                            <li><a href="#none">정신건강∙재활보건사업</a></li>
+                            <li><a href="#none">의료비지원사업</a></li>
+                            <li><a href="#none">치매예방 및 관리사업</a></li>
+                            <li><a href="#none">코로나19</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">예방접종안내</a>
+                        <ul class="dep2">
+                            <li><a href="#none">영유아예방접종</a></li>
+                            <li><a href="#none">성인예방접종</a></li>
+                            <li><a href="#none">해외여행자 예방접종</a></li>
+                            <li><a href="#none">예방접종시 주의사항</a></li>
+                            <li><a href="#none">예방접종 도우미</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">열린마당</a>
+                        <ul class="dep2">
+                            <li><a href="#none">보건소식</a></li>
+                            <li><a href="#none">입찰공고</a></li>
+                            <li><a href="#none">감염병자료실</a></li>
+                            <li><a href="#none">보건교육자료실</a></li>
+                            <li><a href="board.html">의료기관/약국</a></li>
+                            <li><a href="#none">산후조리원</a></li>
+                            <li><a href="#none">사진자료실</a></li>
+                            <li><a href="#none">주요행사</a></li>
+                            <li><a href="#none">칭찬해주세요</a></li>
+                            <li><a href="#none">국민신문고</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub_shadow">
+            </div>
+        </div>
+
+        <!-- 퀵메뉴 -->
+        <div id="quick">
+            <ul>
+                <li>
+                    <a href="board.html" class="bt1"></a>
+                </li>
+                <li>
+                    <a href="sub.html" class="bt2"></a>
+                </li>
+                <li>
+                    <a href="#none" class="bt3"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="sub_nav">
+            <div class="sub_nav">
+                <ul>
+                    <li>
+                        <a href="login.html" class="wayto">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none" class="guide">통합회원</a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none"><i class="xi-home"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 서브 메뉴 영역-->
+        <section>
+            <div id="sub_menu_wrap">
+                <div id="sub_menu">
+                    <h1>회원서비스</h1>
+                    <p></p>
+                    <ul>
+                        <li class="bo_b">
+                            <a href="login.html" class="m_hover_1">로그인</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">회원가입</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">아이디/비밀번호찾기</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">이용안내</a>
+                        </li>
+                        <li class="bo_b">
+                            <a href="#none" class="m_hover">배너사이트</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="login">
+                    <div id="login_left">로그인</div>
+                    <div id="login_right">
+                        <div class="share">
+                            <a href="#none"><img src="./img/ico-share.png" width="20" height="22" alt="share"
+                                    class="ic_sh"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="privacy">
+                    <div class="pri_t">
+                        <ul>
+                            <li>개인정보보호를 위해 정보 입력 시 가상 키패드 및 키보드 보안 프로그램설치를 권장합니다. (선택사항)</li>
+                            <li><input type="checkbox"> <a href="#none">PC 방화벽 보안 프로그램 선택 설치 <i
+                                        class="xi-wrench"></i></a></li>
+                            <li class="mamama"><input type="checkbox"> <a href="#none">키보드보안 프로그램 선택 설치 <i
+                                        class="xi-wrench"></i></a></li>
+                            <li class="grgr">- PC 방화벽/키보드보안 프로그램 설치 없이도 서비스를 이용할 수 있습니다.</li>
+                            <li class="grgr">- 브라우저 인증에서 비밀번호 키보드 입력이 필요한 경우 키보드보안 프로그램 설치 및 사용을 체크 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="loginwrap">
+                    <div id="loginhere">
+                        <button class="log_1 active">회원 로그인</button>
+                        <button class="log_2">비회원 본인인증</button>
+
+                        <div class="log_1_tap">
+                            <form>
+                                <div class="idbox">
+                                    <p>아이디</p><input type="text" placeholder="아이디를 입력해주세요." class="logid">
+                                </div>
+                                <div class="passbox">
+                                    <p>비밀번호</p><input type="password" placeholder="비밀번호를 입력해주세요." class="logpass">
+                                </div>
+                                <button><i class="xi-log-in"></i> 로그인</button>
+                            </form>
+                            <div class="log_t">
+                                <span class="log_t_1">회원가입</span>
+                                <span class="log_t_2">아이디 찾기</span>
+                                <span class="log_t_3">비밀번호 찾기</span>
+                            </div>
+                            <span class="passment">비밀번호 입력 5회 오류시 로그인이 20분 동안 접속제한 됩니다.</span>
+                        </div>
+
+                        <div class="log_2_tap">
+                            <div class="ipin">
+                                <img src="./img/ipin.png" alt="ipin">
+                                <ul>
+                                    <li class="iphone">I-PIN</li>
+                                    <li>SCI 평가정보 제공 주민번호 대체 서비스</li>
+                                    <li>문의 1577-1006</li>
+                                    <li><a href="https://ipin.siren24.com/i-PIN/jsp/ipin2_j21.jsp"><span>아이핀 인증하기</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="phone">
+                                <img src="./img/phone.png" alt="phone">
+                                <ul>
+                                    <li class="iphone">휴대폰 인증</li>
+                                    <li>본인 명의의 휴대폰으로 인증</li>
+                                    <li>문의 1577-1006</li>
+                                    <li><a href="https://pcc.siren24.com/pcc_V3/passWebV2/pcc_V3_j10.jsp"><span>휴대폰 인증하기</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="easylogin">
+                        <div class="easy">간편 로그인</div>
+                        <div class="easy_t">
+                            <span>회원가입 없이 이용이 가능합니다.</span>
+                            <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=NnM28IIJTm6xFSLfyINb&state=576737355095940382863195646976354014086&redirect_uri=https://www.hscity.go.kr/www/socialLogin/socialLogin.do"><img src="./img/easylog.jpg" width="230" height="50" alt="easylog"></a>
+                            <span>최초 1회 본인인증 필요합니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배경화면 영역 -->
+            <div class="back hidden">
+                <div class="back1">
+                    <img src="./img/back_img_1.png" alt="back_img_1">
+                </div>
+                <div class="back2">
+                    <img src="./img/back_img_2.png" alt="back_img_2">
+                </div>
+            </div>
+        </section>
+
+        <div class="null"></div>
+
+        <!-- 푸터 -->
+        <div id="familysite">
+            <div id="familysite_center">
+                <ul class="familySite">
+                    <li class="f1"><a href="#none">직속기관/사업소<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list1">
+                            <li><a href="#none" target="_blank">행정복지센터</a></li>
+                            <li><a href="#none" target="_blank">보건소</a> </li>
+                            <li><a href="#none" target="_blank">맑은물사업소</a></li>
+                            <li><a href="#none" target="_blank">지역개발사업소</a></li>
+                            <li><a href="#none" target="_blank">환경사업소</a> </li>
+                            <li><a href="#none" target="_blank">차량등록사업소</a></li>
+                            <li><a href="#none" target="_blank">농업기술센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="f2"><a href="#none">화성시 패밀리 사이트<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list2">
+                            <li><a href="#none" target="_blank">화성일자리센터</a></li>
+                            <li><a href="#none" target="_blank">화성시 평생학습관</a></li>
+                            <li><a href="#none" target="_blank">화성시사회적경제센터</a></li>
+                            <li><a href="#none" target="_blank">화성시여성가족재단</a></li>
+                            <li><a href="#none" target="_blank">화성시장애인체육회</a></li>
+                            <li><a href="#none" target="_blank">화성시노사민정협의회</a></li>
+                        </ul>
+                    </li>
+                    <li class="f3"><a href="#none">공공/기타기관<i class="xi-plus xi-1x"></i></a>
+                        <ul class="family_list3">
+                            <li><a href="#none" target="_blank">화성시사회복지재단</a></li>
+                            <li><a href="#none" target="_blank">화성산업진흥원</a></li>
+                            <li><a href="#none" target="_blank">화성시환경재단</a></li>
+                            <li><a href="#none" target="_blank">동탄호수공원</a></li>
+                            <li><a href="#none" target="_blank">화성시장애인가족지원센터</a></li>
+                            <li><a href="#none" target="_blank">화성시문화재단</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div class="foot_l">
+                    <a href="./index.html"><img src="./img/gray_logo.png" width="234" height="60" alt="gray_logo"></a>
+                </div>
+                <div class="foot_c">
+                    <div class="top">
+                        <a href="#none" class="email">이메일무단수집거부</a>
+                        <a href="#none" class="person">개인정보처리방침</a>
+                    </div>
+                    <div class="bt">
+                        <span>화성시 보건소 우)18596 경기도 화성시 향남읍 3.1만세로 1055 TEL)031-5189-2551 FAX)031-5189-1518<br>
+                        동탄 보건소 우)18640 경기도 화성시 노작로 226-9 TEL)031-5189-4377 FAX) 031-5189-4391<br>
+                        동부 보건소 우)18412 경기도 화성시 떡전골로 72-3 TEL)031-5189-4430~1 FAX)031-5189-4990</span><br>
+                        <span>COPYRIGHT (C) 화성시보건소 ALL RIGHTS RESERVED</span>
+                    </div>
+                </div>
+                <div class="foot_r">
+                    <img src="./img/footer_call.png" width="72" height="86" alt="call">
+                </div>
+                <div class="foot_rr">
+                    <span>민원안내콜센터</span>
+                    <p>1577-4200</p>
+                    <span>(031-370-3900)</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

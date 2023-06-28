@@ -1,0 +1,417 @@
+/* 서브 네비 */
+
+#sub_nav{
+    width: 100%;
+    height: 100px;
+}
+
+#sub_nav .sub_nav{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sub_nav .sub_nav ul li{
+    float: right;
+}
+
+#sub_nav .sub_nav ul li a{
+    display: block;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+.xi-home, .xi-angle-right, .guide, .xi-angle-right{
+    color: #919191;
+}
+
+.wayto{
+    color: #000000;
+}
+
+/* 섹션 서브 메뉴 */
+
+section{
+    width: 100%;
+    height: 1200px;
+    background-color: #fff;
+}
+
+section #sub_menu_wrap{
+    width: 1200px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+section #sub_menu_wrap #sub_menu{
+    width: 200px;
+    height: 1100px;
+    float: left;
+}
+
+section #sub_menu_wrap #sub_menu h1{
+    margin-bottom: 20px;
+}
+
+section #sub_menu_wrap #sub_menu p{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+section #sub_menu_wrap #sub_menu ul li{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.bo_b{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.m_hover{
+    display: block;
+    color: #000000;
+}
+
+/* 의료기관/약국 */
+.m_hover_1{
+    display: block;
+    color: #f47320;
+}
+
+section #sub_menu_wrap #sub_menu ul .bo_b:hover a{
+    color: #f47320;
+}
+
+section #sub_menu_wrap #map{
+    width: 940px;
+    height: 1200px;
+    float: left;
+    padding: 0px 20px 40px 20px;
+}
+
+section #sub_menu_wrap #map #map_center{
+    width: 940px;
+    height: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map_left{
+    width: 840px;
+    height: 50px;
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 프린트 공유 박스 */
+#map_right{
+    width: 100px;
+    height: 50px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+    left: 35px;
+}
+
+.print{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+}
+
+.print a img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 9px;
+}
+
+.share{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+}
+
+.share a img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 9px;
+}
+
+/* 약국 영역 */
+
+#pharmacy{
+    width: 940px;
+}
+
+.pha_menu{
+    width: 940px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.pha_flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pha_flex li:nth-child(2),
+.pha_flex li:nth-child(3){
+    width: auto;
+    height: 30px;
+    background-color: #919191;
+    border-radius: 10px 10px 0 10px;
+    color: #fff;
+    padding: 5px 50px 5px 50px;
+    font-size: 1.2em;
+}
+
+.pha_flex li:nth-child(1){
+    width: auto;
+    height: 30px;
+    background-color: #f47320;
+    border-radius: 10px 10px 0 10px;
+    color: #fff;
+    padding: 5px 50px 5px 50px;
+    font-size: 1.2em;
+}
+
+.pha_flex li:hover{
+    background-color: #f47320;
+}
+
+.pha_flex li a{
+    display: block;
+    color: #fff;
+}
+
+/* 약국 게시판 */
+.board_wrap{
+    width: 940px;
+    height: 820px;
+    margin: 0 auto;
+}
+
+.board_title{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_bor{
+    width: 600px;
+    height: 30px;
+    border: 2px solid #9191914f;
+    border-radius: 10px;
+}
+
+.board_title input{
+    width: 580px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.board_place{
+    font-size: 1em;
+}
+
+.board_title a{
+    display: inline-block;
+    width: 65px;
+    height: 29px;
+    background-color: #919191;
+    border-radius: 10px 10px 0 10px;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.dddd{
+    font-size: 0.9em;
+    color: #3b3b3b;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.boad_list_wrap{
+    width: 840px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.board_list_1{
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid #3b3b3b;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.board_list > div{
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(104, 103, 103);
+}
+
+.boad_list_wrap > div > .num{
+    text-align: center;
+    width: 10%;
+}
+
+.boad_list_wrap > div > .subject{
+    text-align: center;
+    width: 8%;
+}
+
+.boad_list_wrap > div > .name{
+    text-align: center;
+    width: 18%;
+}
+
+.boad_list_wrap > div > .adress{
+    text-align: center;
+    width: 49%;
+}
+
+.boad_list_wrap > div > .phone{
+    text-align: center;
+    width: 15%;
+}
+
+.board_list{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.name a{
+    display: block;
+    color: rgb(104, 103, 103);
+}
+
+/* 게시판 버튼 */
+
+.bt_wrap{
+    width: 830px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt_wrap a{
+    margin: 20px;
+    color: rgb(104, 103, 103);
+}
+
+.btwrapleft{
+    position: relative;
+    top: 0;
+    left: -10px;
+}
+ 
+/* 만족도 영역 */
+
+#map_bot{
+    width: 100%;
+    height: 500px;
+}
+
+#map_bot #map_bot_center{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#map_bot #map_bot_center ul{
+    width: 880px;
+    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 250px;
+}
+
+#map_bot #map_bot_center ul li{
+    display: inline-block;
+}
+
+.mapb_box{
+    width: 85px;
+    height: 40px;
+    border-radius: 15px 15px 0 15px;
+    background-color: #a19f9f;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    margin-right: 26px;
+}
+
+/* 만족도 체크 폼태그 */
+
+#form{
+    width: 700px;
+    height: 240px;
+    margin-left: 374px;
+}
+
+form{
+    width: 700px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.typing{
+    width: 600px;
+    height: 65px;
+    border-radius: 10px;
+    border: 2px solid #a19f9f;
+    margin-top: 20px;
+}
+
+.typing input{
+    width: 570px;
+    height: 60px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.typing_place{
+    font-size: 1em;
+}
+
+.inputpro{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #a19f9f;
+    position: relative;
+    top: -70px;
+    left: 615px;
+}
+
+.inputpro a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
