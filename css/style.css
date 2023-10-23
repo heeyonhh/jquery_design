@@ -347,7 +347,10 @@ header{
     width: 600px;
     height: 290px;
     float: left;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 /* 서치 보더 */
@@ -356,27 +359,6 @@ header{
     width: 420px;
     height: 50px;
     border-radius: 10px;
-    position: absolute;
-    top: 120px;
-    left: 50px;
-}
-
-.searchBorder:after{
-    content: '\e97a';
-    font-family: xeicon;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 440px;
-    background-color: #f47321;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 1.5em;
-    cursor: pointer;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: #f47321 0px 5px 10px;
 }
 
 .searchBorder input[type=search]::placeholder{
@@ -398,6 +380,17 @@ header{
     border: 0;
     margin-top: 8px;
     margin-left: 25px;
+}
+
+.searchBar a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f47321;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: #f47321 0px 5px 10px;
 }
 
 /* 헤더 배너 */
